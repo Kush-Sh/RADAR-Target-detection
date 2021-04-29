@@ -115,3 +115,7 @@ end
 
 ```
 <img src="https://github.com/Kush-Sh/RADAR-Target-detection/blob/main/Images/2D-CFAR.jpg" width="1600" height="793" />
+
+## Installation and Software for project
+
+MATLAB file is attached for the process mentioned above. Just open the radar_target_detection.m with MATLAB software for editing and simulation purpose.
