@@ -44,7 +44,7 @@ signal_fft = abs(signal_fft);
 signal_fft  = signal_fft(1:(Nr/2));
 
 ```
-Plotting code
+Plotting code for 1D FFT
 ```
 figure ('Name','Range from First FFT')
 subplot(2,1,1)
@@ -64,6 +64,13 @@ sig_fft2 = sig_fft2(1:Nr/2,1:Nd);
 sig_fft2 = fftshift (sig_fft2);
 RDM = abs(sig_fft2);
 RDM = 10*log10(RDM) ;
+
+```
+Plotting code for 2D FFT
+```
+doppler_axis = linspace(-100,100,Nd);
+range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
+figure,surf(doppler_axis,range_axis,RDM);
 
 ```
 <img src="https://github.com/Kush-Sh/RADAR-Target-detection/blob/main/Images/2D%20FFT.jpg" width="1600" height="793" />
