@@ -44,6 +44,16 @@ signal_fft = abs(signal_fft);
 signal_fft  = signal_fft(1:(Nr/2));
 
 ```
+Plotting code
+```
+figure ('Name','Range from First FFT')
+subplot(2,1,1)
+
+plot(signal_fft)
+axis ([0 200 0 1]);
+
+```
+
 <img src="https://github.com/Kush-Sh/RADAR-Target-detection/blob/main/Images/1D%20FFT.jpg" width="1600" height="793" />
 
 ```
